@@ -9,3 +9,5 @@ __pycache__/
 .coverage
 htmlcov/
 domains/*/files/
+
+web/shared/chrome-user-data/
