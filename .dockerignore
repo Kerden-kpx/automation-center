@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.git/
+.idea/
+.vscode/
+.DS_Store
+
+web/chrome-user-data/
+web/scheduler_center/frontend/node_modules/
+web/scheduler_center/frontend/dist/

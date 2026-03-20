@@ -1,0 +1,2 @@
+# Backward-compatible path for old Docker build scripts.
+-r ../../../requirements.txt

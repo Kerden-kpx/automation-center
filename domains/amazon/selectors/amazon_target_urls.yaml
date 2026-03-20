@@ -1,0 +1,54 @@
+"1":
+  site: "US"
+  name: "Kids' Paint With Water Kits"
+  urls:
+    - "https://www.amazon.com/Best-Sellers-Toys-Games-Kids-Paint-With-Water-Kits/zgbs/toys-and-games/676721011/ref=zg_bs_pg_2_toys-and-games?_encoding=UTF8&pg=1"
+    - "https://www.amazon.com/Best-Sellers-Toys-Games-Kids-Paint-With-Water-Kits/zgbs/toys-and-games/676721011/ref=zg_bs_pg_2_toys-and-games?_encoding=UTF8&pg=2"
+"2":
+  site: "US"
+  name: "Reciprocating Saw Blades"
+  urls:
+    - "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Reciprocating-Saw-Blades/zgbs/hi/552332/ref=zg_bs_pg_1_hi?_encoding=UTF8&pg=1"
+    - "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Reciprocating-Saw-Blades/zgbs/hi/552332/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2"
+"3":
+  site: "UK"
+  name: "Countersink Bits"
+  urls:
+    - "https://www.amazon.co.uk/Best-Sellers-DIY-Tools-Countersink-Bits/zgbs/diy/1939186031/ref=zg_bs_pg_1_diy?_encoding=UTF8&pg=1"
+    - "https://www.amazon.co.uk/Best-Sellers-DIY-Tools-Countersink-Bits/zgbs/diy/1939186031/ref=zg_bs_pg_2_diy?_encoding=UTF8&pg=2"
+"4":
+  site: "DE"
+  name: "Säbelsägeblätter"
+  urls:
+    - "https://www.amazon.de/gp/bestsellers/diy/2077265031/ref=zg_bs_pg_1_diy?ie=UTF8&pg=1"
+    - "https://www.amazon.de/gp/bestsellers/diy/2077265031/ref=zg_bs_pg_2_diy?ie=UTF8&pg=2"
+"5":
+  site: "JP"
+  name: "レシプロソーアクセサリ"
+  urls:
+    - "https://www.amazon.co.jp/gp/bestsellers/diy/2460352051/ref=zg_bs_pg_2_diy?ie=UTF8&pg=1"
+    - "https://www.amazon.co.jp/gp/bestsellers/diy/2460352051/ref=zg_bs_pg_2_diy?ie=UTF8&pg=2"
+"6":
+  site: "US"
+  name: "Hand Files"
+  urls:
+    - "https://www.amazon.com/Best-Sellers-Industrial-Scientific-Hand-Files/zgbs/industrial/256181011/ref=zg_bs_pg_2_industrial?_encoding=UTF8&pg=1"
+    - "https://www.amazon.com/Best-Sellers-Industrial-Scientific-Hand-Files/zgbs/industrial/256181011/ref=zg_bs_pg_2_industrial?_encoding=UTF8&pg=2"
+"7":
+  site: "US"
+  name: "Riveters"
+  urls:
+    - "https://www.amazon.com/Best-Sellers-Automotive-Riveters/zgbs/automotive/15708911/ref=zg_bs_pg_2_automotive?_encoding=UTF8&pg=1"
+    - "https://www.amazon.com/Best-Sellers-Automotive-Riveters/zgbs/automotive/15708911/ref=zg_bs_pg_2_automotive?_encoding=UTF8&pg=2"
+"8":
+  site: "US"
+  name: "Pipe Cutters"
+  urls:
+    - "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Pipe-Cutters/zgbs/hi/553180/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=1"
+    - "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Pipe-Cutters/zgbs/hi/553180/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2"
+"9":
+  site: "US"
+  name: "Power Oscillating Tool Blades"
+  urls:
+    - "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Power-Oscillating-Tool-Blades/zgbs/hi/8106524011/ref=zg_bs_pg_1_hi?_encoding=UTF8&pg=1"
+    - "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Power-Oscillating-Tool-Blades/zgbs/hi/8106524011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2"

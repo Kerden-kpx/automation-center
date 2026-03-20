@@ -1,0 +1,84 @@
+# Amazon product details export selectors
+# Used by flow: Common.web.flows.amazon.flows.amazon_product_details
+# Notes:
+# - Keep selector lists ordered by priority.
+# - Include both Chinese and English text variants when possible.
+
+# ==================== 首次地址设置（Deliver） ====================
+delivery_location_trigger:
+  - "a#nav-global-location-popover-link"
+  - "#nav-global-location-popover-link"
+  - "text=Deliver to"
+  - "xpath=//a[@id='nav-global-location-popover-link']"
+
+current_delivery_zip:
+  - "#glow-ingress-line2"
+  - "span#glow-ingress-line2"
+  - "xpath=//span[@id='glow-ingress-line2']"
+
+delivery_zip_input:
+  - "input#GLUXZipUpdateInput"
+  - "input[aria-label*='zip code']"
+  - "xpath=//input[@id='GLUXZipUpdateInput']"
+
+delivery_zip_input_jp_prefix:
+  - "input#GLUXZipUpdateInput_0"
+  - "input[autocomplete='input-0 postal-code']"
+  - "xpath=//input[@id='GLUXZipUpdateInput_0']"
+
+delivery_zip_input_jp_suffix:
+  - "input#GLUXZipUpdateInput_1"
+  - "input[autocomplete='input-1 postal-code']"
+  - "xpath=//input[@id='GLUXZipUpdateInput_1']"
+
+delivery_done_button:
+  - "button[name='glowDoneButton']"
+  - "button:has-text('Done')"
+  - "xpath=//button[@name='glowDoneButton' and contains(normalize-space(.), 'Done')]"
+
+# ==================== 货币设置 ====================
+currency_selected_option:
+  - "input[name='cop']:checked + i + span span"
+  - "xpath=//input[@name='cop' and @checked]/following-sibling::i/following-sibling::span//span"
+  - "span.a-dropdown-prompt"
+  - "xpath=//span[contains(@class,'a-dropdown-prompt')]"
+
+currency_dropdown_trigger_jp:
+  - "span.a-dropdown-prompt"
+  - "span.a-button-text.a-declarative:has(span.a-dropdown-prompt)"
+  - "xpath=//span[contains(@class,'a-button-text') and contains(@class,'a-declarative')][.//span[contains(@class,'a-dropdown-prompt')]]"
+
+currency_option_jp:
+  - "a.a-dropdown-link[data-value*='JPY']"
+  - "a#icp-currency-dropdown_1"
+  - "xpath=//a[contains(@class,'a-dropdown-link') and contains(@data-value,'JPY')]"
+
+currency_save_button:
+  - "span#icp-save-button input.a-button-input"
+  - "input[aria-labelledby='icp-save-button-announce']"
+  - "xpath=//span[@id='icp-save-button']//input[contains(@class,'a-button-input')]"
+
+# ==================== 产品标识 ====================
+promotion_tag_selectors_us:
+  - label: "Limited time deal"
+    selectors:
+      - "span.dealBadge span#dealBadgeSupportingText span:has-text('Limited time deal')"
+      - "span#dealBadgeSupportingText:has-text('Limited time deal')"
+      - "xpath=//span[contains(@class,'dealBadge')]//span[contains(normalize-space(.), 'Limited time deal')]"
+
+promotion_tag_selectors_jp:
+  - label: "30日間での最低価格"
+    selectors:
+      - "span.delight-pricing-badge-label-text:has-text('30日間での最低価格')"
+      - "span.a-size-small.delight-pricing-badge-label-text:has-text('30日間での最低価格')"
+      - "xpath=//span[contains(@class,'delight-pricing-badge-label-text') and contains(normalize-space(.), '30日間での最低価格')]"
+  - label: "タイムセール"
+    selectors:
+      - "span#dealBadgeSupportingText span:has-text('タイムセール')"
+      - "span#dealBadgeSupportingText:has-text('タイムセール')"
+      - "xpath=//span[@id='dealBadgeSupportingText']//span[contains(normalize-space(.), 'タイムセール')]"
+
+# ==================== 特殊类目：综合转化率 ====================
+special_conversion_rate_value:
+  - "div.jz-detail-value div.ant-flex:has(div.sc-bbSYpP)"
+  - "xpath=//div[contains(@class,'jz-detail-value')]//div[contains(@class,'ant-flex') and .//div[contains(@class,'sc-bbSYpP')]]"

@@ -1,0 +1,108 @@
+not_logged_in_badge:
+  - 'div.user-name:has-text("未登录")'
+  - 'xpath=//div[contains(@class,"user-name") and contains(normalize-space(.), "未登录")]'
+
+account_login_tab:
+  - 'a.nav-link[href="#pills-account"]:has-text("账号登录")'
+  - 'xpath=//a[contains(@class,"nav-link") and @href="#pills-account" and contains(normalize-space(.), "账号登录")]'
+
+account_input:
+  - 'input[name="email"][placeholder="手机号/邮箱/子账号"]'
+  - 'xpath=//input[@type="text" and @name="email"]'
+
+password_input:
+  - 'input[type="password"][placeholder="密 码"]'
+  - 'xpath=//input[@type="password" and contains(@placeholder,"密")]'
+
+login_submit_button:
+  - 'button.btn-ext.btn-ext-primary[type="submit"]:has-text("立即登录")'
+  - 'button.btn-ext.btn-ext-primary[type="submit"]'
+  - 'button.login-btn[type="submit"]:has-text("立即登录")'
+  - 'button[type="submit"]:has-text("立即登录")'
+  - 'xpath=//button[contains(@class,"btn-ext-primary") and @type="submit" and .//span[contains(normalize-space(.), "立即登录")]]'
+  - 'xpath=//button[@type="submit" and .//span[contains(normalize-space(.), "立即登录")]]'
+  - 'xpath=//button[contains(@class,"login-btn") and @type="submit" and contains(normalize-space(.), "立即登录")]'
+
+asin_count_ready:
+  - 'p.statistics-item-title:has-text("ASIN数量")'
+  - 'text=ASIN数量'
+  - 'xpath=//p[contains(@class,"statistics-item-title") and contains(normalize-space(.), "ASIN数量")]'
+
+competitor_query_input:
+  - 'input.el-input__inner[placeholder*="父(子)体ASIN或产品链接"]'
+  - 'xpath=//input[@type="text" and contains(@placeholder,"父(子)体ASIN或产品链接")]'
+
+site_select_input:
+  - 'input.el-input__inner[placeholder="请选择"][readonly]'
+  - 'xpath=//input[@type="text" and @readonly and @placeholder="请选择"]'
+
+site_dropdown_options:
+  - 'xpath=//ul[contains(@class,"el-select-dropdown__list")]//li[contains(@class,"el-select-dropdown__item")]'
+
+competitor_query_button:
+  - 'button.el-button.el-button--primary.el-button--small:has-text("立即查询")'
+  - 'xpath=//button[contains(@class,"el-button--primary") and contains(@class,"el-button--small") and contains(normalize-space(.), "立即查询")]'
+
+export_button:
+  - 'button.my-download:has-text("导出")'
+  - 'button.el-button.el-tooltip.my-download.success-border.el-button--default.el-button--small.is-plain:has-text("导出")'
+  - 'xpath=//button[contains(@class,"my-download") and contains(normalize-space(.), "导出")]'
+
+page_size_select:
+  - 'div.el-select.el-select--mini .el-input__inner[readonly]'
+  - 'xpath=//div[contains(@class,"el-select") and contains(@class,"el-select--mini")]//input[@readonly]'
+
+page_size_option_100:
+  - 'li.el-select-dropdown__item:has-text("100条/页")'
+  - 'xpath=//li[contains(@class,"el-select-dropdown__item")]//span[contains(normalize-space(.),"100条/页")]'
+
+later_view_button:
+  - 'button.el-button.cancel.el-button--info.el-button--small:has-text("等会儿看")'
+  - 'xpath=//button[contains(@class,"cancel") and contains(normalize-space(.), "等会儿看")]'
+
+select_all_checkbox:
+  - 'span.el-checkbox__input:has(input.el-checkbox__original[type="checkbox"])'
+  - 'xpath=//span[contains(@class,"el-checkbox__input") and .//input[contains(@class,"el-checkbox__original") and @type="checkbox"]]'
+
+export_detail_button:
+  - 'button.el-button.el-tooltip.success-border.el-button--default.el-button--small:has-text("导出明细")'
+  - 'xpath=//button[contains(@class,"el-button--small") and contains(normalize-space(.), "导出明细")]'
+
+next_page_button:
+  - 'button.btn-next:not([disabled])'
+  - 'button.el-pager-next:not([disabled])'
+  - 'xpath=//button[contains(@class,"btn-next") and not(@disabled) and not(contains(@class,"disabled"))]'
+  - 'xpath=//button[contains(@class,"el-pager-next") and not(@disabled) and not(contains(@class,"disabled"))]'
+  - 'xpath=//button[not(@disabled) and (contains(normalize-space(.),"下一页") or .//i[contains(@class,"el-icon-arrow-right")])]'
+  - 'xpath=//li[not(contains(@class,"disabled"))]/button[contains(normalize-space(.),"下一页")]'
+
+chart_button:
+  - 'a.el-tooltip:has(span.iconfont.icon-historical-trend)'
+  - 'span.iconfont.icon-historical-trend'
+  - 'xpath=//a[contains(@class,"el-tooltip") and .//span[contains(@class,"icon-historical-trend")]]'
+  - 'xpath=//span[contains(@class,"iconfont") and contains(@class,"icon-historical-trend")]'
+
+asin_info:
+  - 'div:has(span:has-text("ASIN:"))'
+  - 'xpath=//div[.//span[contains(normalize-space(.), "ASIN:")]]'
+
+history_trend_tab:
+  - 'span:has-text("历史趋势")'
+  - 'xpath=//span[contains(normalize-space(.), "历史趋势")]'
+
+history_trend_export_button:
+  - 'button.keepa-ext-btn.item.el-button--mini:has-text("导出")'
+  - 'button.el-tooltip.keepa-ext-btn.item:has(i.iconfont.icon-download):has-text("导出")'
+  - 'xpath=//button[contains(@class,"keepa-ext-btn") and contains(@class,"item") and .//i[contains(@class,"icon-download")] and contains(normalize-space(.), "导出")]'
+
+history_trend_close_button:
+  - 'xpath=//i[contains(@class,"fa-times") and contains(@class,"close")]'
+  - 'xpath=//i[@class="fa fa-times close"]'
+
+go_view_button:
+  - 'button.el-button.el-button--primary.el-button--small:has-text("前往查看")'
+  - 'xpath=//button[contains(@class,"el-button--primary") and contains(@class,"el-button--small") and contains(normalize-space(.), "前往查看")]'
+
+my_exports_rows:
+  - 'tr.bg-white[table-item-id]'
+  - 'xpath=//tr[contains(@class,"bg-white") and @table-item-id]'

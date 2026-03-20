@@ -1,0 +1,65 @@
+# Amazon Best Sellers selectors
+# Source page: Best Sellers in Reciprocating Saw Blades
+# Notes:
+# - Keep selector lists ordered by priority (most stable first).
+# - Add fallback selectors at the end.
+
+# 目标页 URL
+target_url: "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Reciprocating-Saw-Blades/zgbs/hi/552332/ref=zg_bs_pg_1_hi?_encoding=UTF8&pg=1"
+
+# 页面标题选择器（用于判断页面是否打开正确）
+page_title:
+  - "h1:has-text('Best Sellers in Reciprocating Saw Blades')"
+  - "text=Best Sellers in Reciprocating Saw Blades"
+
+# 抓取完成标记：当页面出现 #50 卡片时可停止滚动
+# 说明：优先匹配稳定的官方角标类名，后面是兜底
+completion_rank_marker:
+  - "span.zg-bdg-text:has-text('#50')"
+  - "span[class*='zg-badge-text']:has-text('#50')"
+  - "span.a-badge-text:has-text('#50')"
+
+# 卡片扩展数据就绪标记（用于判断插件数据已完成渲染）
+# 说明：命中 #50 并等待 10s 后，会继续检查这些文本是否出现在大部分卡片中
+card_data_ready_markers:
+  - "近30天"
+  - "流量"
+  - "综合转化率"
+
+# 商品卡片根节点选择器（按稳定性排序）
+card_roots:
+  - "div#gridItemRoot"
+  - "div.zg-grid-general-faceout"
+  - "div.p13n-sc-uncoverable-faceout"
+  - "div.p13n-sc-card"
+  - "li.zg-item-immersion"
+  - "div[data-asin]"
+  - "div.a-section.a-spacing-none.p13n-asin"
+
+# 排名角标选择器
+rank_badge:
+  - "span.zg-bdg-text"
+  - "span[class*='zg-badge-text']"
+  - "span.a-badge-text"
+
+# ==================== 货币设置 ====================
+currency_selected_option:
+  - "input[name='cop']:checked + i + span span"
+  - "xpath=//input[@name='cop' and @checked]/following-sibling::i/following-sibling::span//span"
+  - "span.a-dropdown-prompt"
+  - "xpath=//span[contains(@class,'a-dropdown-prompt')]"
+
+currency_dropdown_trigger_jp:
+  - "span.a-dropdown-prompt"
+  - "span.a-button-text.a-declarative:has(span.a-dropdown-prompt)"
+  - "xpath=//span[contains(@class,'a-button-text') and contains(@class,'a-declarative')][.//span[contains(@class,'a-dropdown-prompt')]]"
+
+currency_option_jp:
+  - "a.a-dropdown-link[data-value*='JPY']"
+  - "a#icp-currency-dropdown_1"
+  - "xpath=//a[contains(@class,'a-dropdown-link') and contains(@data-value,'JPY')]"
+
+currency_save_button:
+  - "span#icp-save-button input.a-button-input"
+  - "input[aria-labelledby='icp-save-button-announce']"
+  - "xpath=//span[@id='icp-save-button']//input[contains(@class,'a-button-input')]"

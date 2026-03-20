@@ -1,0 +1,15 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        # 改成你的后端公网地址，例如:
+        # VITE_API_BASE_URL: "http://47.xx.xx.xx:18765"
+        # 或绑定域名后:
+        # VITE_API_BASE_URL: "https://api.example.com"
+        VITE_API_BASE_URL: "${VITE_API_BASE_URL:-http://YOUR_BACKEND_HOST:18765}"
+    container_name: bi-amazon-frontend
+    restart: unless-stopped
+    ports:
+      - "5174:5174"

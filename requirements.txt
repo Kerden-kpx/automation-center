@@ -1,0 +1,41 @@
+# Unified dependency list for automation-center
+
+# Browser automation
+playwright>=1.40.0
+playwright-stealth>=1.0.6
+websockets>=12.0
+selenium>=4.28.0
+undetected-chromedriver>=3.5.5
+
+# API / service layer
+fastapi>=0.115.12
+uvicorn[standard]>=0.34.0
+pydantic>=2.10.6
+
+# Data / files
+pandas>=2.1.0
+openpyxl>=3.1.0
+PyYAML>=6.0.1
+python-dotenv>=1.0.1
+
+# DB
+SQLAlchemy>=2.0.38
+PyMySQL>=1.1.1
+aiomysql>=0.2.0
+
+# Async HTTP / serialization / crypto
+aiohttp>=3.8.0
+orjson>=3.9.0
+pycryptodome>=3.19.0
+pycryptodomex>=3.19.0
+
+# DingTalk ecosystem
+dingtalk-stream>=0.24.0
+alibabacloud-dingtalk>=2.0.0
+alibabacloud-tea-openapi>=0.3.0
+alibabacloud-tea-util>=0.3.0
+
+# Development tools
+pytest>=8.3.0
+pytest-asyncio>=0.24.0
+ruff>=0.8.0

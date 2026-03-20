@@ -1,0 +1,12 @@
+playwright>=1.40.0
+dingtalk-stream>=0.24.0
+alibabacloud-dingtalk>=2.0.0
+alibabacloud-tea-openapi>=0.3.0
+alibabacloud-tea-util>=0.3.0
+aiomysql>=0.2.0
+aiohttp>=3.8.0
+pycryptodome>=3.19.0
+pycryptodomex>=3.19.0
+orjson>=3.9.0
+pydantic>=1.8.0
+
